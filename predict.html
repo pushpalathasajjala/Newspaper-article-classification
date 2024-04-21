@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<body style="background-image: url(/static/img/ModelTrain.jpg); background-repeat: round;">
+    <link rel="stylesheet" href="{{url_for('static',filename='css/upload.css')}}">
+    <div class="holder">
+        <div class="file">
+            <form action="/getdata" method="post">
+                <div>
+                    <textarea name="article" cols="100" rows="10" placeholder="Enter The Article"></textarea>
+                </div>
+                <center>
+                    <input class="btn btn-primary" type="submit" value="Submit" style="margin-top: 10px;" />
+                </center>
+            </form>
+            <div style="font-weight: bold; font-size: 70px; margin-left: 40px;">
+                {{msg}}
+            </div>
+        </div>
+</body>
+{% endblock %}

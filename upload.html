@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% block content %}
+<link rel="stylesheet" href="{{url_for('static',filename='css/upload.css')}}">
+
+<body style="background-image: url('/static/img/UploadData.jpg'); background-repeat:round;">
+
+    <div class="holder">
+        <div class="file">
+            <form action="/getfile" method="post" enctype="multipart/form-data">
+                <input type="file" name="datafile" accept=".*csv">
+                <input type="submit">
+                <h2>{{msg}}</h2>
+            </form>
+        </div>
+    </div>
+</body>
+{% endblock %}

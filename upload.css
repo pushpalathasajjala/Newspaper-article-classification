@@ -1,0 +1,35 @@
+.holder {
+    margin-top: 5%;
+    margin-left: 20%;
+    position: relative;
+    max-width: 850px;
+    width: 100%;
+    background: #fff;
+    padding: 40px 30px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    perspective: 2700px;
+}
+
+.file {
+    position: relative;
+    left: 5%;
+}
+
+
+.title {
+    position: absolute;
+    font-size: 24px;
+    font-weight: 1000;
+    color: #fff;
+    margin-left: 10%;
+    left: 45%;
+    top: 10%;
+}
+
+#input {
+    background-color: #7d2ae8;
+    color: white;
+    margin-top: 10%;
+    cursor: pointer;
+    transition: all 0.4s ease;
+}

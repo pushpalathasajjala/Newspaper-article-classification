@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Result</title>
+    <link rel="stylesheet" href="{{url_for('static',filename='css/result.css')}}">
+    <link rel="stylesheet" href="{{url_for('static',filename='css/upload.css')}}">
+</head>
+
+<body
+    style='background-image: url("https://thumbs.dreamstime.com/b/suicide-word-composed-multi-colored-stones-over-black-volcanic-sand-suicide-text-colored-stones-over-black-volcanic-sand-144233048.jpg");'>
+    <center style="
+    margin-top: 20%;
+    font-size: xxx-large;
+    color:#FFF;
+    font-family: sans-serif;
+    ">
+        <h3><a class="result" href="https://suicidepreventionlifeline.org/">The Tweet Has
+                {{result}}</a></h3><br>
+        <h3>The Probability Score is {{probability}}%</h3>
+    </center>
+</body>
+<script src="{{url_for('static',filename='js/result.css')}}"></script>
+
+</html>

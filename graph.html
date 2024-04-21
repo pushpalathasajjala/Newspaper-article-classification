@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<body>
+    <link rel="stylesheet" href="{{url_for('static',filename='css/upload.css')}}">
+    <div class="holder">
+        <h1>Comparision Graph For The Algorithms</h1>
+        <img src="{{url_for('static',filename='img/graph.png')}}" alt="Comparision Chart">
+    </div>
+</body>
+{% endblock %}

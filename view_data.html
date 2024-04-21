@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% block content %}
+
+<link rel="stylesheet" href="{{url_for('static',filename='css/upload.css')}}">
+
+<body style="background-image: url('/static/img/UploadData.jpg'); background-repeat: round;">
+    <div class="holder">
+        {% include "table.html" %}
+    </div>
+</body>
+
+{% endblock %}

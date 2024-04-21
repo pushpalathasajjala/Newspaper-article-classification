@@ -1,0 +1,33 @@
+body {
+  background-color: #ff7e5e;
+}
+
+.nav-bar {
+  height: 100%;
+  position: absolute;
+  left: 0%;
+  top: 0%;
+  border-radius: 25px;
+  background: #3febb2;
+  padding: 100px;
+}
+
+.nav-bar .buttonsholder {
+  background: #7d2ae8;
+  border-radius: 10%;
+  left: 0%;
+  top: 0%;
+}
+
+.nav-bar .buttonsholder .buttonhome {
+  position: absolute;
+  top: 25%;
+}
+#input {
+  background-color: beige;
+  color: black;
+  border-radius: 20%;
+  margin-top: 10%;
+  cursor: pointer;
+  transition: all 0.4s ease;
+}

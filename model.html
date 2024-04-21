@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<link rel="stylesheet" href="{{url_for('static',filename='css/upload.css')}}">
+
+<body style="background-image: url(/static/img/ModelTrain.jpg); background-repeat: round;">
+    <div class="holder">
+        <div class="file">
+            <form action="/selectmodel" method="post">
+                <td><select name="algo" id="algo">
+                        <option value="0">Select</option>
+                        <option value="1">Support Vector Machine Classifier</option>
+                        <option value="2">Perceptron</option>
+                        <option value="3">Nayive Bayes</option>
+                        <option value="4">SGD Classifier</option>
+                        <option value="5">Logistic Regression</option>
+                    </select><br>
+                    <input type="submit" value="Submit" style="margin-top: 10px;">
+            </form>
+            </td>
+            <div style="font-weight: bold; font-size: 70px; margin-left: 40px;">
+                {{score}}
+            </div>
+        </div>
+</body>
+
+{% endblock %}
